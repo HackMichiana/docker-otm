@@ -9,3 +9,5 @@ RUN apt-get -y install libfreetype6-dev
 RUN apt-get -y install postgresql postgresql-server-dev-9.3 postgresql-contrib postgresql-9.3-postgis-2.1
 COPY setup_postgres.sh .
 RUN ./setup_postgres.sh
+COPY setup_otm-core.sh .
+RUN ./setup_otm-core.sh
